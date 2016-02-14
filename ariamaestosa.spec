@@ -1,5 +1,5 @@
 %define tarname	AriaSrc
-
+%define debug_package %{nil}
 Name:		ariamaestosa
 Version:	1.4.11
 Release:	1
