@@ -1,4 +1,5 @@
 %define tarname	AriaSrc
+%define debug_package %{nil}
 
 Name:		ariamaestosa
 Version:	1.4.11
@@ -33,10 +34,10 @@ interface offering keyboard, guitar, drum and controller views.
 %setup -q -n %{tarname}-%{version}
 
 %build
-%{__python} scons/scons.py prefix=%{_prefix} destdir=%{buildroot}
+%{__python2} scons/scons.py prefix=%{_prefix} destdir=%{buildroot}
 
 %install
-%{__python} scons/scons.py install prefix=%{buildroot}%{_prefix}
+%{__python2} scons/scons.py install prefix=%{buildroot}%{_prefix}
 
 %find_lang aria_maestosa
 
