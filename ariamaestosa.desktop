@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=AriaMaestosa
+Name[fr]=AriaMaestosa
+Comment=Aria Maestosa music editor
+Comment[fr]=Editeur de musique Aria Maestosa
+Exec=Aria %f
+Icon=ariamaestosa
+Type=Application
+Terminal=false
+StartupNotify=true
+MimeType=application/x-ariamaestosa;
+Categories=AudioVideo;Audio;
