@@ -2,7 +2,7 @@
 %define debug_package %{nil}
 
 Name:		ariamaestosa
-Version:	1.4.11
+Version:	1.4.13
 Release:	1
 Summary:	An open-source midi tracker/editor
 # License is GPLv2 with exceptions (look at license.txt)
