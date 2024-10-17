@@ -8,7 +8,7 @@ Summary:	An open-source midi tracker/editor
 # License is GPLv2 with exceptions (look at license.txt)
 License:	GPLv2
 Group:		Sound
-URL:		http://ariamaestosa.sourceforge.net
+URL:		https://ariamaestosa.sourceforge.net
 Source0:	http://sourceforge.net/projects/ariamaestosa/files/%{name}/%{version}/%{tarname}-%{version}.tar.bz2
 Source1:	ariamaestosa.desktop
 BuildRequires:	cvs
