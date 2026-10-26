@@ -1,0 +1,14 @@
+diff -rupN AriaSrc-1.4.13.old/SConstruct AriaSrc-1.4.13/SConstruct
+--- AriaSrc-1.4.13.old/SConstruct	2026-10-26 12:30:50.825779078 +0100
++++ AriaSrc-1.4.13/SConstruct	2026-10-26 12:35:07.317500912 +0100
+@@ -288,8 +288,8 @@ def compile_Aria(which_os):
+                 else:
+                     env.ParseConfig( [WXCONFIG] + ['--cppflags','--libs','core,base,adv,gl,net'])
+             else:
+-                env.ParseConfig( [WXCONFIG] + ['--cppflags','--libs','core,base,adv,net'])
+-                # env.ParseConfig( [WXCONFIG] + ['--cppflags','--libs','core,base,adv,net,webview'])
++                # env.ParseConfig( [WXCONFIG] + ['--cppflags','--libs','core,base,adv,net'])
++                env.ParseConfig( [WXCONFIG] + ['--cppflags','--libs','core,base,adv,net,webview'])
+         else:
+             if renderer == "opengl":
+                 env.ParseConfig( [WXCONFIG] + ['--cppflags','--libs','core,base,adv,net,gl'])
