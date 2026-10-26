@@ -1,0 +1,21 @@
+diff -rupN AriaSrc-1.4.13.old/Src/Midi/Sequence.cpp AriaSrc-1.4.13/Src/Midi/Sequence.cpp
+--- AriaSrc-1.4.13.old/Src/Midi/Sequence.cpp	2017-01-02 21:42:09.000000000 +0100
++++ AriaSrc-1.4.13/Src/Midi/Sequence.cpp	2026-10-26 12:25:33.656586663 +0100
+@@ -878,7 +878,6 @@ bool Sequence::readFromFile(irr::io::Irr
+     
+     tracks.clearAndDeleteAll();
+     
+-    once
+     {
+         ScopedMeasureITransaction tr(m_measure_data->startImportTransaction());
+         
+diff -rupN AriaSrc-1.4.13.old/Src/Utils.h AriaSrc-1.4.13/Src/Utils.h
+--- AriaSrc-1.4.13.old/Src/Utils.h	2017-01-02 21:42:09.000000000 +0100
++++ AriaSrc-1.4.13/Src/Utils.h	2026-10-26 12:25:00.416046166 +0100
+@@ -215,6 +215,4 @@ public:
+     }
+ };
+ 
+-#define once for(int __xyzwrst=0; __xyzwrst<1; __xyzwrst++)
+-
+ #endif

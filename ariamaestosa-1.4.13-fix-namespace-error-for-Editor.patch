@@ -1,0 +1,12 @@
+diff -rupN AriaSrc-1.4.13.old/Src/Actions/MoveNotes.cpp AriaSrc-1.4.13/Src/Actions/MoveNotes.cpp
+--- AriaSrc-1.4.13.old/Src/Actions/MoveNotes.cpp	2017-01-02 21:42:09.000000000 +0100
++++ AriaSrc-1.4.13/Src/Actions/MoveNotes.cpp	2026-10-26 12:21:26.724435087 +0100
+@@ -33,7 +33,7 @@ using namespace AriaMaestosa::Action;
+ 
+ // ----------------------------------------------------------------------------------------------------------
+ 
+-MoveNotes::MoveNotes(Editor* editor, const int relativeX, const int relativeY, const int noteID) :
++MoveNotes::MoveNotes(AriaMaestosa::Editor* editor, const int relativeX, const int relativeY, const int noteID) :
+     //I18N: (undoable) action name
+     SingleTrackAction( _("move note(s)") )
+ {
