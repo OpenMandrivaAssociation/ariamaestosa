@@ -5,7 +5,7 @@
 Summary:	An open-source midi tracker/editor
 Name:	ariamaestosa
 Version:	1.4.13
-Release: 1
+Release: 2
 # License is GPLv2 with exceptions (look at license.txt)
 License:	GPL-2.0-or-later
 Group:		Sound
